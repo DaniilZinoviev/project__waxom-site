@@ -1,4 +1,7 @@
 window.onload = function () {
+  
+// Scroll
+    
 	var timer;
 	var scrolled;
 	var necessaryBlock;
@@ -18,4 +21,15 @@ window.onload = function () {
 			window.scrollTo(0,necessaryBlock);
 		}
 	}
+  
+// Toggle menu
+    
+    let menuBtn = document.querySelector(".menu-btn");
+    menuBtn.onclick = function() {
+        let nav = this.parentElement.parentElement.querySelector(".nav");
+        nav.classList.toggle("show")
+        this.classList.toggle("close");
+    }
+  
+  
 }
